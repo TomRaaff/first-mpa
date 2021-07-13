@@ -1,7 +1,5 @@
-# TS Project Template
-A simple template for using NPM tasks to build and compile TypeScript, JavaScript, CSS, and image files.
-Based on [Chris Ferdinandi's Build Tool Boilerplate](https://github.com/cferdinandi/build-tool-boilerplate)
-
+# MPA experimentation
+This project is created to experiment with building a Multi-page app using the tools I've built.
 
 **Install**
 
@@ -9,20 +7,10 @@ Based on [Chris Ferdinandi's Build Tool Boilerplate](https://github.com/cferdina
 
 **Quick Start**
 
-Each task has just one or two dependencies (*except for image optimization*), so I recommend deleting the ones you don't need before running `npm install`. Learn more in [the documentation](#documentation) below.
-
 1. In bash/terminal/command line, `cd` into your project directory.
 2. Run `npm install`.
 3. Run `npm run build`.
 4. Run `npm start` to start local development
-
-
-## Documentation
-
-This is a template that you can use as a starting point for your projects.
-
-[Running Tasks](#running-tasks) · [JavaScript](#javascript) · [Sass => CSS](#sass--css) · [SVG Optimization](#svg-optimization) · [Image Optimization](#image-optimization) · [Copy Files](#copy-files) · [Clean](#clean) · [Complete Build](#complete-build) · [Watch for Changes](#watch-for-changes) · [Server](#server)
-
 
 ### Running Tasks
 
