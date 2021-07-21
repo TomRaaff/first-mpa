@@ -20,4 +20,6 @@ component. Otherwise there will be far too much code duplication, as all of my f
 use the component code, for example...
 So, instead, I'll write one js-file for every page. 
 
+I resumed working on the design system page. First-up: the html.
+
 

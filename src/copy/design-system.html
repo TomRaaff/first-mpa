@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Copy Me</title>
+    <title>Design system</title>
 
     <!--<Favicon>-->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -11,48 +11,89 @@
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <!--</Favicon>-->
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <main>
-    <section></section>
-    <section class="todo">
-        <h2>Todo:</h2>
-        <ul>
-            <li>Fix webpack for multi-page apps</li>
-            <li>Fix webpack for multiple sass-files</li>
-            <li>Define variables in Css</li>
-            <li>Structure all elements in Css</li>
-            <li>Write utility components in JS (like a ColorsComponent)</li>
-            <li>Fill the html content</li>
-            <li>Find out what other sections you need</li>
-            <li>Figure out how to display grids</li>
-            <li>Make every section collapsable</li>
-            <li>Write a decent Css-reset...?</li>
-        </ul>
+    <section class="todo system-section">
+        <details>
+            <summary>To do:</summary>
+            <ul>
+                <li>Finish writing out the colors</li>
+                <li>fix the sass folder structure: move design-system.scss to style.scss</li>
+                <li>Find out what other sections you need</li>
+                <li>Figure out how to display grids</li>
+            </ul>
+        </details>
     </section>
 
-    <section></section>
-    <section class="typography">
-        <h1>Title/Header1</h1>
-        <h2>Header2</h2>
-        <h3>Header3</h3>
-        <h4>Subtitle</h4>
-        <div>Body - default textsize</div>
-        <div><strong>Bold text</strong></div>
-        <div><small>Small text</small></div>
-        <div class="pre-title">Pre title text</div>
-        <div class="button-text">Button text</div>
-        <div><a href="/">Link text</a></div>
+    <section class="typography system-section">
+        <details>
+            <summary>Typography</summary>
+            <h1>Title/Header1</h1>
+            <h2>Header2</h2>
+            <h3>Header3</h3>
+            <h4>Subtitle</h4>
+            <div>Body - default textsize</div>
+            <div><strong>Bold text</strong></div>
+            <div><small>Small text</small></div>
+            <div class="pre-title">Pre title text</div>
+            <button>Button text</button>
+            <div><a href="/">Link text</a></div>
+        </details>
     </section>
 
-    <section class="colors"></section>
-    <section class="spacing"></section>
-    <section class="grids"></section>
-    <section class="components">
+    <section class="colors system-section">
+        <details open>
+            <summary>Colors</summary>
+
+            <div class="color-sample">
+                <h2>Tiffany Blue</h2>
+                <div class="color-info">
+                    <h4>$Primary</h4>
+                    <div class="pre-title">Primary CTA color</div>
+                </div>
+                <div class="color-variations">
+                    <div class="color-variation bg-primary-lightest"><small>$primary1</small></div>
+                    <div class="color-variation bg-primary-light"><small>$primary3</small></div>
+                    <div class="color-variation bg-primary-dark"><small>$primary7</small></div>
+                    <div class="color-variation bg-primary-darkest"><small>$primary9</small></div>
+                </div>
+                <div class="color-example bg-primary"></div>
+            </div>
+
+            <div class="color-sample">
+                <h2>Rose matter</h2>
+                <div class="color-info">
+                    <h4>$Secondary</h4>
+                    <div class="pre-title">Secondary CTA color</div>
+                </div>
+                <div class="color-variations">
+                    <div class="color-variation bg-secondary-lightest"><small>$secondary1</small></div>
+                    <div class="color-variation bg-secondary-light"><small>$secondary3</small></div>
+                    <div class="color-variation bg-secondary-dark"><small>$secondary7</small></div>
+                    <div class="color-variation bg-secondary-darkest"><small>$secondary9</small></div>
+                </div>
+                <div class="color-example bg-secondary"></div>
+            </div>
+        </details>
+    </section>
+
+    <section class="spacing system-section">
+        <details open>
+            <summary>Spacing</summary>
+        </details>
+    </section>
+
+    <section class="grids system-section">
+        <details open>
+            <summary>grids</summary>
+        </details>
+    </section>
+
+    <section class="components system-section">
         <article class="form-elements"></article>
         <article class="buttons"></article>
     </section>

@@ -1,140 +1,73 @@
-@import './variables';
-
-/**
- * @section Base Styles
- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import 'variables';
 
 body {
-  font-family: "Roboto Slab", Avenir, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: $dark;
-  font-size: medium;
-}
-
-header {
-  padding: 16px;
-  background: $primary;
-  color: $offWhite;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
   margin: 0;
-  padding: 0;
-  text-indent: 0;
-  list-style-type: none;
+  box-sizing: border-box;
+
+  // fonts
+  font-family: "Roboto Slab", Avenir, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
 }
 
-li {
-  padding: 0 16px;
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: -2%;
 }
 
-input,
-textarea,
-select,
-button {
-  font: inherit;
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -2%;
 }
 
-nav,
-figure,
-nav > ul,
-nav > ul > li {
-  display: inline-block;
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: -2%;
+  margin-bottom: 0;
 }
 
-nav > ul > li:hover {
-  color: $secondary;
-  cursor: pointer;
+h4 {
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: -2%;
+  margin-bottom: 0;
 }
 
-main {
-  background-color: $offWhite;
-  display: grid;
-  grid-template-columns: 135px auto;
+strong {
+  font-weight: bold;
 }
 
-aside {
-  height: 100vh;
-  padding-top: 16px;
+small {
+  font-weight: normal;
+  font-size: 14px;
 }
 
-main > aside > li:hover {
-  background: $secondary;
-  color: $offWhite;
+.pre-title {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
 }
-
-section.item-content {
-  .calculator {
-    border-radius: 16px;
-    padding: 16px;
-    margin: 16px auto;
-    width: 50%;
-    min-width: 320px;
-    max-width: 520px;
-    display: grid;
-    grid-template-columns: repeat(4, 24%);
-    grid-template-rows: repeat(5, auto);
-  }
-
-  header {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    border-radius: 10px;
-    background: $ternary
-  }
-
-  input.equationInput {
-    padding: 10px 5px;
-    grid-column-start: 1;
-    grid-column-end: 5
-  }
-
-  button [type=solveEquation] {
-    background-color: $ternary;
-    color: white;
-  }
-
-  button[type=solveEquation]:hover {
-    background-color: $secondary
-  }
-}
-
-article {
-  padding-top: 10vh;
-  text-align: center;
-}
-
-input {
-  margin: 5px;
-  padding: 5px;
-  border: solid 1px $ternary;
-  border-radius: 5px;
-}
-
 
 button {
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background: $grey;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
 }
 
-button:hover {
-  background: $ternary;
-  color: $offWhite;
+a {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
-:focus-visible {
-  outline: 2px solid $secondary;
+section {
+  box-shadow: $boxShadow;
+  padding: 2rem 4rem;
+  margin: 2rem;
+  border-radius: $borderRadiusS;
 }
+

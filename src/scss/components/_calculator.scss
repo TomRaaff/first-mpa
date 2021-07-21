@@ -1,0 +1,140 @@
+@import './variables';
+
+/**
+ * @section Base Styles
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", Avenir, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $dark;
+  font-size: medium;
+}
+
+header {
+  padding: 16px;
+  background: $primary;
+  color: $offWhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 0 16px;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+nav,
+figure,
+nav > ul,
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li:hover {
+  color: $secondary;
+  cursor: pointer;
+}
+
+main {
+  background-color: $offWhite;
+  display: grid;
+  grid-template-columns: 135px auto;
+}
+
+aside {
+  height: 100vh;
+  padding-top: 16px;
+}
+
+main > aside > li:hover {
+  background: $secondary;
+  color: $offWhite;
+}
+
+section.item-content {
+  .calculator {
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px auto;
+    width: 50%;
+    min-width: 320px;
+    max-width: 520px;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(5, auto);
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 10px;
+    background: $tertiary
+  }
+
+  input.equationInput {
+    padding: 10px 5px;
+    grid-column-start: 1;
+    grid-column-end: 5
+  }
+
+  button [type=solveEquation] {
+    background-color: $tertiary;
+    color: white;
+  }
+
+  button[type=solveEquation]:hover {
+    background-color: $secondary
+  }
+}
+
+article {
+  padding-top: 10vh;
+  text-align: center;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+  border: solid 1px $tertiary;
+  border-radius: 5px;
+}
+
+
+button {
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: $grey;
+}
+
+button:hover {
+  background: $tertiary;
+  color: $offWhite;
+}
+
+:focus-visible {
+  outline: 2px solid $secondary;
+}

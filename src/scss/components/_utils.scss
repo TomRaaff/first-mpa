@@ -1,0 +1,46 @@
+@import 'variables';
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-primary-lightest {
+  background-color: $primary1;
+}
+
+.bg-primary-light {
+  background-color: $primary3;
+}
+
+.bg-primary-dark {
+  background-color: $primary7;
+}
+
+.bg-primary-darkest {
+  background-color: $primary9;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.bg-secondary-lightest {
+  background-color: $secondary1;
+}
+
+.bg-secondary-light {
+  background-color: $secondary3;
+}
+
+.bg-secondary-dark {
+  background-color: $secondary7;
+}
+
+.bg-secondary-darkest {
+  background-color: $secondary9;
+}
+
+
+.bg-tertiary {
+  background-color: $tertiary;
+}
