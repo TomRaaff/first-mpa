@@ -6,7 +6,7 @@ import pkg from './package.json';
 
 // Configs
 var configs = {
-	files: ['main.js', 'detects.js', 'another-file.js'], // package root files
+	files: ['main.js', 'design-system.js'], // package root files
 	formats: ['es'], // ['iife', 'es', 'amd', 'cjs'],
 	default: 'es',
 	pathIn: 'compiledjs',

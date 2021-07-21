@@ -1,6 +1,6 @@
 {
     "name": "MPA-experiment",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "description": "Simple recipes for building and compiling with the CLI.",
     "author": {
         "name": "Tom Raaff",
