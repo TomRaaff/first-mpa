@@ -1,4 +1,6 @@
-@import "variables";
+@import 'components/base';
+@import 'components/utils';
+@import 'components/variables';
 
 header {
   background: $primary;

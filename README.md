@@ -120,7 +120,7 @@ In the `sass.js` file, there's a `configs` object that you can use to control wh
 // Configs
 var configs = {
     name: 'MyProject',    // The name to use in the file banner
-    files: ['main.scss'], // The files to process
+    files: ['calculator.scss'], // The files to process
     pathIn: 'src/scss',   // The source directory for your Sass files
     pathOut: 'dist/css',  // The directory to compile CSS files into
     indentType: 'tab',    // The type of indenting to use ['tab'|'spaces']
