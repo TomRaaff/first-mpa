@@ -1,15 +1,17 @@
 @import 'variables';
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  box-sizing: border-box;
 
   // fonts
   font-family: "Roboto Slab", Avenir, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
-  background: $grey;
+  background: $grey5;
 }
 
 main {
@@ -26,7 +28,7 @@ button {
 header {
   padding: $padding;
   background: $primary;
-  color: $offWhite;
+  color: $grey1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +49,7 @@ header {
   }
 
   a {
-    color: $offWhite;
+    color: $grey1;
   }
 
   nav,
@@ -98,6 +100,12 @@ small {
   font-size: 14px;
 }
 
+.pre-title {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
 button {
   letter-spacing: 2px;
 }
@@ -106,11 +114,11 @@ a {
   font-weight: bold;
   font-size: 16px;
   text-decoration: underline;
-  color: $tertiary;
+  color: $secondary;
 }
 
 a:hover {
-  color: $tertiary1;
+  color: $secondary1;
 }
 
 section {
@@ -118,7 +126,7 @@ section {
   padding: $paddingLG $paddingXL;
   margin: $margin auto;
   border-radius: $borderRadiusSM;
-  background: $offWhite;
+  background: $grey1;
   max-width: 1080px;
 }
 
@@ -136,7 +144,7 @@ button {
   cursor: pointer;
   border: none;
   border-radius: $borderRadius;
-  background: $grey;
+  background: $grey5;
 }
 
 button:hover {

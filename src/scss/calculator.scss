@@ -21,14 +21,14 @@
       grid-column-start: 1;
       grid-column-end: 5;
       border-radius: $borderRadiusLG;
-      background: $tertiary;
+      background: $secondary;
       margin: $marginXS;
     }
 
     input {
       margin: $marginXS;
       padding: $paddingXS;
-      border: solid 1px $tertiary;
+      border: solid 1px $secondary;
       border-radius: $borderRadius;
     }
 
@@ -39,17 +39,17 @@
     }
 
     button [type=solveEquation] {
-      background-color: $tertiary;
+      background-color: $secondary;
       color: white;
     }
 
     button[type=solveEquation]:hover {
-      background-color: $secondary
+      background-color: $tertiary
     }
 
     button:hover {
-      background: $tertiary;
-      color: $offWhite;
+      background: $secondary;
+      color: $grey1;
     }
   }
 }

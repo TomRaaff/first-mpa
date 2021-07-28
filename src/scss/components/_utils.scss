@@ -1,5 +1,21 @@
 @import 'variables';
 
+.bg-grey {
+  background-color: $grey5;
+}
+.bg-grey-lightest {
+  background-color: $grey1;
+}
+.bg-grey-light {
+  background-color: $grey3;
+}
+.bg-grey-dark {
+  background-color: $grey7;
+}
+.bg-grey-darkest {
+  background-color: $grey9;
+}
+
 .bg-primary {
   background-color: $primary;
 }

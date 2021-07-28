@@ -8,30 +8,28 @@
   letter-spacing: -2%;
 }
 
-.pre-title {
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 3px;
-}
-
 .color-sample {
   padding: $padding 0;
   display: grid;
   grid-template-columns: 40% 20% 20% 20%;
+
+  .isGrey {
+    border: solid 1px $grey7;
+    color: $grey9;
+  }
 }
 
 .color-example {
   width: 100%;
   height: 100px;
-  border-radius: $borderRadiusSM;
+  border-radius: 0 $borderRadiusSM $borderRadiusSM 0;
 }
 
 .color-variation {
   height: 25%;
   width: 100%;
   padding: 0 $padding;
-  color: $offWhite;
-  border-radius: $borderRadiusSM;
+  color: $grey1;
 }
 
 .spacing-blocks {

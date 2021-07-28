@@ -13,7 +13,8 @@ const colorVars = [
 	{
 		identifier: 'tertiary',
 		colorName: 'Orange Peel'
-	}
+	},
+	{ identifier: 'grey', colorName: 'Panda' },
 ];
 
 (function () {
