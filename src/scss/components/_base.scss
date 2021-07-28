@@ -67,7 +67,14 @@ a {
 section {
   box-shadow: $boxShadow;
   padding: 2rem 4rem;
-  margin: 2rem;
+  margin: 2rem auto;
   border-radius: $borderRadiusS;
 }
 
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  color: $tertiary7;
+}

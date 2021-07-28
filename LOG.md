@@ -21,5 +21,10 @@ use the component code, for example...
 So, instead, I'll write one js-file for every page. 
 
 I resumed working on the design system page. First-up: the html.
+I thought that implementing the design system would be a bit faster, since the thinking
+was already done by the guys from the [Figma video](linktoyoutube here). But it still
+takes a while to set up. I'm pretty happy to see where my folder strucure is taking me though.
+It looks very comprehensible so far.
 
-
+### Day 3
+I added a component for the colors-part of the designsystem page. It doesn't contain any logic, but it works nicely.
