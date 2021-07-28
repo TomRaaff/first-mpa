@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  padding: $basePadding $xlPadding;
+  padding: $padding $paddingXL;
 }
 
 input,
@@ -24,7 +24,7 @@ button {
 }
 
 header {
-  padding:  $basePadding;
+  padding: $padding;
   background: $primary;
   color: $offWhite;
   display: flex;
@@ -43,7 +43,7 @@ header {
   }
 
   li {
-    padding: 0 $smPadding;
+    padding: 0 $paddingSM;
   }
 
   nav,
@@ -94,12 +94,6 @@ small {
   font-size: 14px;
 }
 
-.pre-title {
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 3px;
-}
-
 button {
   letter-spacing: 2px;
 }
@@ -117,9 +111,9 @@ a:hover {
 
 section {
   box-shadow: $boxShadow;
-  padding: $lgPadding $xlPadding;
-  margin: 2rem auto;
-  border-radius: $borderRadiusS;
+  padding: $paddingLG $paddingXL;
+  margin: $margin auto;
+  border-radius: $borderRadiusSM;
   background: $offWhite;
   max-width: 1080px;
 }
@@ -133,14 +127,19 @@ summary:hover {
 }
 
 button {
-  padding: $xsPadding $basePadding;
-  margin: 5px;
+  padding: $paddingXS $padding;
+  margin: $marginXS;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: $borderRadius;
   background: $grey;
 }
 
 button:hover {
   background: $tertiary;
+}
+
+:focus-visible {
+  outline: 2px solid $secondary;
+  border-radius: $borderRadius;
 }

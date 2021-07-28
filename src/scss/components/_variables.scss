@@ -20,15 +20,21 @@ $tertiary9: #b86b00;
 $focus: #C744F3;
 
 // SPACING
-$basePadding: 1.5rem;
-$xsPadding: $basePadding * 0.25;
-$smPadding: $basePadding * 0.5;
-$lgPadding: $basePadding * 2;
-$xlPadding: $basePadding * 4;
+$padding: 1.5rem;
+$paddingXS: $padding * 0.25;
+$paddingSM: $padding * 0.5;
+$paddingLG: $padding * 2;
+$paddingXL: $padding * 4;
+
+$margin: 2rem;
+$marginXS: $margin * 0.25;
+$marginSM: $margin * 0.5;
+$marginLG: $margin * 2;
+$marginXL: $margin * 4;
 
 
 $boxShadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 
-$borderRadiusS: 4px;
-$borderRadiusM: 8px;
-$borderRadiusL: 12px;
+$borderRadius: 8px;
+$borderRadiusSM: $borderRadius * 0.5;
+$borderRadiusLG: $borderRadius * 1.5;

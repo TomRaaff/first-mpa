@@ -1,13 +1,13 @@
 @import 'components/variables';
 @import 'components/base';
 
-section.item-content {
+.item-content {
   max-width: 1080px;
-  border-radius: $borderRadiusL;
+  border-radius: $borderRadiusLG;
 
   .component {
     margin: 0 auto;
-    padding: $lgPadding;
+    padding: $paddingLG;
     min-width: 320px;
     max-width: 520px;
 
@@ -20,12 +20,20 @@ section.item-content {
     header {
       grid-column-start: 1;
       grid-column-end: 5;
-      border-radius: 10px;
-      background: $tertiary
+      border-radius: $borderRadiusLG;
+      background: $tertiary;
+      margin: $marginXS;
+    }
+
+    input {
+      margin: $marginXS;
+      padding: $paddingXS;
+      border: solid 1px $tertiary;
+      border-radius: $borderRadius;
     }
 
     input.equationInput {
-      padding: $basePadding $smPadding;
+      padding: $padding $paddingSM;
       grid-column-start: 1;
       grid-column-end: 5
     }
@@ -38,26 +46,10 @@ section.item-content {
     button[type=solveEquation]:hover {
       background-color: $secondary
     }
+
+    button:hover {
+      background: $tertiary;
+      color: $offWhite;
+    }
   }
-}
-
-article {
-  padding-top: $xlPadding;
-  text-align: center;
-}
-
-input {
-  margin: 5px;
-  padding: $xsPadding;
-  border: solid 1px $tertiary;
-  border-radius: 5px;
-}
-
-button:hover {
-  background: $tertiary;
-  color: $offWhite;
-}
-
-:focus-visible {
-  outline: 2px solid $secondary;
 }
