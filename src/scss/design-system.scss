@@ -33,3 +33,60 @@
   color: $offWhite;
   border-radius: $borderRadiusSM;
 }
+
+.spacing-blocks {
+  margin: $margin;
+  display: inline-block;
+
+  span {
+    margin-left: $marginSM;
+    margin-right: $marginXS;
+  }
+
+  figure {
+    display: inline-block;
+    background: grey;
+    margin: 0;
+  }
+
+  figure.padding-xs {
+    width: $paddingXS;
+    height: $paddingXS;
+  }
+  figure.padding-sm {
+    width: $paddingSM;
+    height: $paddingSM;
+  }
+  figure.padding {
+    width: $padding;
+    height: $padding;
+  }
+  figure.padding-lg {
+    width: $paddingLG;
+    height: $paddingLG;
+  }
+  figure.padding-xl {
+    width: $paddingXL;
+    height: $paddingXL;
+  }
+  figure.margin-xs {
+    width: $marginXS;
+    height: $marginXS;
+  }
+  figure.margin-sm {
+    width: $marginSM;
+    height: $marginSM;
+  }
+  figure.margin {
+    width: $margin;
+    height: $margin;
+  }
+  figure.margin-lg {
+    width: $marginLG;
+    height: $marginLG;
+  }
+  figure.margin-xl {
+    width: $marginXL;
+    height: $marginXL;
+  }
+}
