@@ -32,38 +32,40 @@ export class CalculatorComponent extends Component {
 	}
 
 	render(): HTMLElement {
-		return div({ class: 'calculator' },
-				   header(
-					   // @ts-ignore
-					   {
-						   onclick: function () {
-							   const headElement = this as HTMLHeadElement;
-							   headElement.remove();
-						   }
-					   },
-					   h3('Calculator')
+		return div({class:'component'},
+				   div({ class: 'calculator' },
+				   		header(
+							   // @ts-ignore
+							   {
+								   onclick: function () {
+									   const headElement = this as HTMLHeadElement;
+									   headElement.remove();
+								   }
+							   },
+							   h3('Calculator')
+				   		),
+				   		this.equationInput,
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '('),
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, ')'),
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '%'),
+				   		button({ class: 'clearEquation', onclick: () => this.clearEquation(this.equationInput) }, 'clear'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '7'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '8'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '9'),
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '/'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '4'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '5'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '6'),
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '*'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '1'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '2'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '3'),
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '+'),
+				   		button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '0'),
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '.'),
+				   		button({ type: 'solveEquation', onclick: () => this.solveEquation(this.equationInput) }, '='),
+				   		button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '-'),
 				   ),
-				   this.equationInput,
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '('),
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, ')'),
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '%'),
-				   button({ class: 'clearEquation', onclick: () => this.clearEquation(this.equationInput) }, 'clear'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '7'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '8'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '9'),
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '/'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '4'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '5'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '6'),
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '*'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '1'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '2'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '3'),
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '+'),
-				   button({ class: 'number', onclick: (event: Event) => this.addToEquation(event) }, '0'),
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '.'),
-				   button({ type: 'solveEquation', onclick: () => this.solveEquation(this.equationInput) }, '='),
-				   button({ class: 'equationItem', onclick: (event: Event) => this.addToEquation(event) }, '-'),
 				   new AnswersComponent(this.state.answer)
 		);
 	}

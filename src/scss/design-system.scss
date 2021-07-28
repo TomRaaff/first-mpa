@@ -2,22 +2,6 @@
 @import 'components/utils';
 @import 'components/variables';
 
-header {
-  background: $primary;
-  color: $offWhite;
-  padding: 2rem;
-}
-
-main {
-  padding: 1rem 5rem;
-  background: $grey;
-}
-
-section {
-  background: $offWhite;
-  max-width: 1080px;
-}
-
 .system-section summary {
   font-weight: normal;
   font-size: 40px;
@@ -25,7 +9,7 @@ section {
 }
 
 .color-sample {
-  padding: 1rem 0;
+  padding: $basePadding 0;
   display: grid;
   grid-template-columns: 40% 20% 20% 20%;
 }
@@ -39,7 +23,7 @@ section {
 .color-variation {
   height: 25%;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 $basePadding;
   color: $offWhite;
   border-radius: $borderRadiusS;
 }

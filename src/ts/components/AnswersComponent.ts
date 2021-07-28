@@ -7,10 +7,11 @@ export class AnswersComponent extends Component {
 		this.setState({answer});
 	}
 
-	render(): HTMLElement | Array<HTMLElement> {
+	render(): HTMLElement {
+		if (!this.state.answer) return div();
 		return div(
 			{ class: 'answers-component' },
-			h2(`here is the answer: ${this.state.answer}`),
+			h2(`Here is the answer: ${this.state.answer}`),
 		);
 	}
 }

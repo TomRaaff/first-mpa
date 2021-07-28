@@ -1,3 +1,4 @@
+// COLORS
 $dark: #011627;
 $offWhite: #fdfffc;
 $grey: #e9ece8;
@@ -17,6 +18,14 @@ $tertiary3: #ffc370;
 $tertiary7: #E08300;
 $tertiary9: #b86b00;
 $focus: #C744F3;
+
+// SPACING
+$basePadding: 1.5rem;
+$xsPadding: $basePadding * 0.25;
+$smPadding: $basePadding * 0.5;
+$lgPadding: $basePadding * 2;
+$xlPadding: $basePadding * 4;
+
 
 $boxShadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 

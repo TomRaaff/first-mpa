@@ -5,16 +5,14 @@ export class HeaderComponent extends Component {
 	render() {
 		const pageNavigation = nav(
 				ul(
-						li(a({href: './index.html'}, 'Components')),
+						li(a({href: './index.html'}, 'Calculator')),
 						li(a({href: './design-system.html'}, 'Design system'))
 				)
 		);
 		pageNavigation.setAttribute('aria-label', 'page-navigation');
 
 		return header(
-				figure(
-						h2('Frameworkless app'),
-				),
+				h2('Frameworkless app'),
 				pageNavigation
 		);
 	}

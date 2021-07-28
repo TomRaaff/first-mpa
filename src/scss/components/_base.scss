@@ -9,6 +9,54 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
+  background: $grey;
+}
+
+main {
+  padding: $basePadding $xlPadding;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+header {
+  padding:  $basePadding;
+  background: $primary;
+  color: $offWhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 0 $smPadding;
+  }
+
+  nav,
+  figure,
+  nav > ul,
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li:hover {
+    color: $secondary;
+    cursor: pointer;
+  }
 }
 
 h1 {
@@ -53,22 +101,27 @@ small {
 }
 
 button {
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 a {
   font-weight: bold;
   font-size: 16px;
   text-decoration: underline;
+  color: $tertiary9;
+}
+
+a:hover {
+  color: $tertiary1;
 }
 
 section {
   box-shadow: $boxShadow;
-  padding: 2rem 4rem;
+  padding: $lgPadding $xlPadding;
   margin: 2rem auto;
   border-radius: $borderRadiusS;
+  background: $offWhite;
+  max-width: 1080px;
 }
 
 summary {
@@ -77,4 +130,17 @@ summary {
 
 summary:hover {
   color: $tertiary7;
+}
+
+button {
+  padding: $xsPadding $basePadding;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: $grey;
+}
+
+button:hover {
+  background: $tertiary;
 }
