@@ -2,7 +2,9 @@
 
 * {
   box-sizing: border-box;
+  font-size: inherit;
 }
+
 body {
   margin: 0;
 
@@ -50,6 +52,9 @@ header {
 
   a {
     color: $grey1;
+  }
+  a:hover {
+    color: $tertiary9;
   }
 
   nav,
@@ -106,10 +111,6 @@ small {
   letter-spacing: 3px;
 }
 
-button {
-  letter-spacing: 2px;
-}
-
 a {
   font-weight: bold;
   font-size: 16px;
@@ -118,7 +119,7 @@ a {
 }
 
 a:hover {
-  color: $secondary1;
+  color: $tertiary;
 }
 
 section {
@@ -145,6 +146,7 @@ button {
   border: none;
   border-radius: $borderRadius;
   background: $grey5;
+  letter-spacing: 2px;
 }
 
 button:hover {
@@ -152,6 +154,6 @@ button:hover {
 }
 
 :focus-visible {
-  outline: 2px solid $secondary;
+  outline: 2px solid $tertiary7;
   border-radius: $borderRadius;
 }
