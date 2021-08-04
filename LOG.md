@@ -28,3 +28,8 @@ It looks very comprehensible so far.
 
 ### Day 3
 I added a component for the colors-part of the designsystem page. It doesn't contain any logic, but it works nicely.
+I also improved the styling a lot. Fixed a lot of styling issues and added more parts to the style guid.
+
+
+### Day 4
+Presentation preparation day. Fixed small details.

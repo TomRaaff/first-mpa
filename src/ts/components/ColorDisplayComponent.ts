@@ -2,6 +2,7 @@ import { Component, div, h2, h4, small } from 'tr-utilities-lib';
 
 export class ColorDisplayComponent extends Component {
 	private isGrey: string;
+
 	constructor(private readonly identifier: string,
 				private readonly colorName: string) {
 		super();
