@@ -3,10 +3,15 @@ import { terser } from 'rollup-plugin-terser';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import pkg from './package.json';
 
-
 // Configs
 var configs = {
-	files: ['main.js', 'design-system.js'], // package root files
+	files: [
+		'main.js',
+		'design-system.js',
+		'webshop/details-page.js',
+		'webshop/products-page.js',
+		'webshop/shopping-cart-page.js'
+	], // package root files
 	formats: ['es'], // ['iife', 'es', 'amd', 'cjs'],
 	default: 'es',
 	pathIn: 'compiledjs',
@@ -32,7 +37,7 @@ var createOutput = function (filename, minify) {
 			output.plugins = [terser()];
 		}
 
-		output.sourcemap = configs.sourceMap
+		output.sourcemap = configs.sourceMap;
 
 		return output;
 	});

@@ -4,7 +4,13 @@ var pkg = require('./package.json');
 
 // Configs
 var configs = {
-	files: ['calculator.scss', 'design-system.scss'],
+	files: [
+		'calculator.scss',
+		'design-system.scss',
+		'products-page.scss',
+		'details-page.scss',
+		'shopping-cart-page.scss',
+	],
 	pathIn: 'src/scss',
 	pathOut: 'dist/css',
 	indentType: 'tab',

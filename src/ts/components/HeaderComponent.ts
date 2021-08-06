@@ -6,7 +6,8 @@ export class HeaderComponent extends Component {
 		const pageNavigation = nav(
 				ul(
 						li(a({href: './index.html'}, 'Calculator')),
-						li(a({href: './design-system.html'}, 'Design system'))
+						li(a({href: './design-system.html'}, 'Design system')),
+						li(a({href: './products-page.html'}, 'Webshop'))
 				)
 		);
 		pageNavigation.setAttribute('aria-label', 'page-navigation');

@@ -122,12 +122,10 @@ a:hover {
 }
 
 section {
-  box-shadow: $boxShadow;
   padding: $paddingLG $paddingXL;
   margin: $margin auto;
   border-radius: $borderRadiusSM;
   background: $grey1;
-  max-width: 1080px;
 }
 
 summary {
