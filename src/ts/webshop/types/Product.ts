@@ -6,4 +6,10 @@ export type Product = {
 	price: number;
 	description: string;
 	imageUrl: string;
+	attributes: {
+		color: string;
+		bassdrumSize: number;
+		cymbalsIncluded: boolean;
+		hardwareIncluded: boolean;
+	}
 }
