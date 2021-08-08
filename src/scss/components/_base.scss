@@ -12,11 +12,12 @@ body {
   font-family: "Roboto Slab", Avenir, sans-serif;
   font-weight: normal;
   font-size: 16px;
-  background: $grey5;
+  background: $grey1;
 }
 
 main {
-  padding: $padding $paddingXL;
+  width: 100vw;
+  padding: 0 $paddingXL;
 }
 
 input,
@@ -36,13 +37,6 @@ header {
 
   h2 {
     margin: 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    list-style-type: none;
   }
 
   li {
@@ -69,6 +63,12 @@ header {
   }
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
 h1 {
   font-weight: bold;
   font-size: 64px;
@@ -122,10 +122,22 @@ a:hover {
 }
 
 section {
-  padding: $paddingLG $paddingXL;
+  padding: $paddingSM $padding;
   margin: $margin auto;
   border-radius: $borderRadiusSM;
   background: $grey1;
+
+  header {
+    padding: $paddingXS $paddingSM;
+  }
+}
+
+aside {
+  display: inline-block;
+}
+
+article {
+  padding: $paddingXS;
 }
 
 summary {
@@ -137,17 +149,28 @@ summary:hover {
 }
 
 button {
-  padding: $paddingXS $padding;
+  padding: $paddingSM $padding;
   margin: $marginXS;
   cursor: pointer;
   border: none;
-  border-radius: $borderRadius;
+  border-radius: $borderRadiusSM;
   background: $grey5;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+button.primary {
+  background: $secondary;
+  color: $grey1;
 }
 
 button:hover {
   background: $tertiary;
+}
+
+figure {
+  margin: $marginSM
 }
 
 :focus-visible {

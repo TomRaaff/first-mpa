@@ -12,19 +12,77 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <script src="https://kit.fontawesome.com/53439c554b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/products-page.css">
 </head>
 <body>
 
 <main>
-    <section class="item-content">
-        <h2>Drumkits</h2>
-        <div class="content">
-            <aside class="filters">
+    <h2>Drumkits</h2>
+    <div class="content">
+        <aside class="filters">
+            <header>
+                <h3>Filters</h3>
+                <figure class="fas fa-sliders-h"></figure>
+            </header>
 
-            </aside>
+            <div class="filter-item">
+                <label for="select-color">Color</label>
+                <select name="color" id="select-color">
+                    <option value="">--</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="cymbals-included">Cymbals included</label>
+                <input type="checkbox" id="cymbals-included">
+            </div>
+            <div class="filter-item">
+                <label for="hardware-included">Hardware included</label>
+                <input type="checkbox" id="hardware-included">
+            </div>
+        </aside>
+
+        <div class="products">
+            <ul id="products-list">
+                <li>
+                    <article>
+                        <div class="img-container">
+                            <img src="/img/gretsch.jpg" alt="a Gretsch drumkit">
+                        </div>
+                        <div class="info-container">
+                            <div class="product-title">
+                                <h4>Gretsch Catalina club</h4>
+                                <h3>€890</h3>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id
+                                maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum
+                                cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor
+                                et
+                                dui.
+                            </div>
+                            <div class="buttons">
+                                <button class="primary">
+                                    <i class="fas fa-shopping-basket"/></i> Buy
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
 </main>
 
 <script type="module" src="js/webshop/products-page.js"></script>

@@ -1,3 +1,84 @@
 @import 'src/scss/components/base';
 @import 'src/scss/components/utils';
 @import 'src/scss/components/variables';
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  aside {
+    vertical-align: top;
+    flex: 0 0 15rem;
+  }
+
+  .filters header {
+    border-radius: $borderRadiusSM;
+
+    .fas {
+      margin: $marginSM;
+      font-size: 2rem;
+    }
+
+    h3{
+      margin: $marginSM;
+    }
+
+    input, select {
+
+    }
+  }
+
+  .filter-item {
+    margin: $marginSM 0 $marginSM 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .products {
+    display: inline-block;
+    align-self: center;
+    flex-grow: 1;
+    margin-left: $marginSM;
+
+    article {
+      background: $grey3;
+      border-radius: $borderRadius;
+      padding: $padding;
+      display: flex;
+    }
+
+    .info-container {
+      padding-left: $padding;
+
+      .product-title {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .rating {
+        margin-bottom: $margin;
+        color: $secondary;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    img {
+      max-width: 250px;
+    }
+
+    h3, h4 {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 0;
+    }
+
+    li {
+      text-decoration: none;
+    }
+  }
+}
+
