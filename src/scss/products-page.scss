@@ -54,6 +54,8 @@
       .product-title {
         display: flex;
         justify-content: space-between;
+        color: $grey9;
+        text-decoration: none;
       }
 
       .rating {

@@ -25,18 +25,18 @@ export class RatingStarsComponent extends Component {
 			});
 	}
 
+	private getStarIconElements(): Array<HTMLElement> {
+		return [0, 1, 2, 3, 4]
+				.map((index) => `${this.componentId}_${index}`)
+				.map((id) => document.getElementById(id)!)
+	}
+
 	private mouseEvents(rating: number) {
 		return {
 			onclick: () => this.rate(rating),
 			onmouseenter: () => this.hover(rating),
 			onmouseout: () => this.hover(this.state.rating)
 		};
-	}
-
-	private getStarIconElements(): Array<HTMLElement> {
-		return [0, 1, 2, 3, 4]
-				.map((index) => `${this.componentId}_${index}`)
-				.map((id) => document.getElementById(id)!)
 	}
 
 	render(): HTMLElement {

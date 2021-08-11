@@ -1,3 +1,15 @@
 @import 'src/scss/components/base';
 @import 'src/scss/components/utils';
 @import 'src/scss/components/variables';
+
+header.productTitle {
+  display: block;
+
+  h2, h3 {
+    display: inline-block;
+  }
+}
+
+img.productImage {
+  max-width: 50vw;
+}

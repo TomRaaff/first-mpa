@@ -1,4 +1,4 @@
-import { article, button, Component, div, h3, h4, i, img } from 'tr-utilities-lib';
+import { a, article, button, Component, div, h3, h4, i, img } from 'tr-utilities-lib';
 import { Product } from '../types/Product';
 import { RatingStarsComponent } from './RatingStars';
 
@@ -9,24 +9,21 @@ export class ProductSummaryComponent extends Component {
 		this.setState({ product });
 	}
 
-	navToDetails() {
-		console.log("navToDetails", {state: this.state, loc: window.location});
-		window.location.href = 'details-page.html';
-	}
-
-	truncate(text: string): string {
+	private truncate(text: string): string {
 		return text.slice(0, 150).concat('...');
 	}
 
 	render(): HTMLElement {
 		const p = this.state.product;
+		const searchParams = `?product=${p.id}`;
 		return article(
 				div({ class: 'img-container' },
-					img({ src: p.imageUrl })
+					a({ href: `details-page.html${searchParams}`},
+					  img({ src: p.imageUrl })
+					)
 				),
 				div({ class: 'info-container' },
-					div(
-						{ class: 'product-title' },
+					a({ class: 'product-title', href: `details-page.html${searchParams}`},
 						h4(`${p.brandName} ${p.productName}`),
 						h3(`€${p.price}`)
 					),
