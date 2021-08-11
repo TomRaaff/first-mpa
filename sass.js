@@ -10,6 +10,7 @@ var configs = {
 		'products-page.scss',
 		'details-page.scss',
 		'shopping-cart-page.scss',
+		'warning.scss'
 	],
 	pathIn: 'src/scss',
 	pathOut: 'dist/css',

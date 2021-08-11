@@ -5,7 +5,7 @@ export class HeaderComponent extends Component {
 	render() {
 		const pageNavigation = nav(
 				ul(
-						li(a({href: './index.html'}, 'Calculator')),
+						li(a({href: './calculator.html'}, 'Calculator')),
 						li(a({href: './design-system.html'}, 'Design system')),
 						li(a({href: './products-page.html'}, 'Webshop'))
 				)

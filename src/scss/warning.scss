@@ -1,0 +1,23 @@
+body {
+  background: #000;
+  font-family: "Roboto Slab", Avenir, sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+.warning {
+  margin: auto;
+  text-align: center;
+
+  h1 {
+    color: #cb0000;
+    font-size: 100px;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  img {
+    width: 50vw;
+  }
+}
