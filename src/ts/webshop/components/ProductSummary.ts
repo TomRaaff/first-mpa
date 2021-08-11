@@ -1,5 +1,6 @@
 import { article, button, Component, div, h3, h4, i, img } from 'tr-utilities-lib';
 import { Product } from '../types/Product';
+import { RatingStarsComponent } from './RatingStars';
 
 export class ProductSummaryComponent extends Component {
 
@@ -20,9 +21,7 @@ export class ProductSummaryComponent extends Component {
 	render(): HTMLElement {
 		const p = this.state.product;
 		return article(
-				{ onclick: this.navToDetails.bind(this) },
-				div(
-					{ class: 'img-container' },
+				div({ class: 'img-container' },
 					img({ src: p.imageUrl })
 				),
 				div({ class: 'info-container' },
@@ -32,11 +31,7 @@ export class ProductSummaryComponent extends Component {
 						h3(`€${p.price}`)
 					),
 					div({class: 'rating'},
-						i({class: 'fas fa-star'}),
-						i({class: 'fas fa-star'}),
-						i({class: 'fas fa-star'}),
-						i({class: 'fas fa-star'}),
-						i({class: 'far fa-star'}),
+						new RatingStarsComponent(p.rating)
 					),
 					div({class: 'description'},
 						this.truncate(p.description)
@@ -51,17 +46,3 @@ export class ProductSummaryComponent extends Component {
 		);
 	}
 }
-
-// <article>
-// 		<div class="img-container">
-// 			<img src="/img/gretsch.jpg" alt="a Gretsch drumkit">
-// 		</div>
-// 		<div class="info-container">
-
-// 			<div class="buttons">
-// 				<button class="primary">
-// 					<i class="fas fa-shopping-basket"/></i> Buy
-// 				</button>
-// 			</div>
-// 		</div>
-// </article>

@@ -26,7 +26,7 @@ export const drumkits: Collection<Product> =
 							  id: '111',
 							  brandName: 'Gretsch',
 							  productName: 'Catalina club',
-							  rating: 3.5,
+							  rating: 3,
 							  price: 899,
 							  imageUrl: 'img/gretsch.jpg',
 							  attributes: {
@@ -41,7 +41,7 @@ export const drumkits: Collection<Product> =
 							  id: '222',
 							  brandName: 'Gretsch',
 							  productName: 'Brooklyn',
-							  rating: 4,
+							  rating: 2,
 							  price: 1299,
 							  imageUrl: 'img/gretsch_red.png',
 							  attributes: {
@@ -71,7 +71,7 @@ export const drumkits: Collection<Product> =
 							  id: '444',
 							  brandName: 'Yamaha',
 							  productName: 'Stage Custom Birch',
-							  rating: 3,
+							  rating: 1,
 							  price: 749,
 							  imageUrl: 'img/Yamaha_stage_custom.jpg',
 							  attributes: {
@@ -86,7 +86,7 @@ export const drumkits: Collection<Product> =
 							  id: '555',
 							  brandName: 'Tama',
 							  productName: 'Imperial star',
-							  rating: 4.5,
+							  rating: 4,
 							  price: 865,
 							  imageUrl: 'img/tama_imperial_star.webp',
 							  attributes: {

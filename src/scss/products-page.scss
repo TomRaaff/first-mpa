@@ -58,7 +58,12 @@
 
       .rating {
         margin-bottom: $margin;
+        color: $secondary3;
+      }
+
+      .rating:hover {
         color: $secondary;
+        cursor: pointer;
       }
 
       .buttons {
