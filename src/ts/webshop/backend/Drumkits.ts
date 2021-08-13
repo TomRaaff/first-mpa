@@ -26,7 +26,7 @@ export const drumkits: Collection<Product> =
 							  productName: 'Catalina club',
 							  rating: 3,
 							  price: 899,
-							  imageUrl: 'img/gretsch.jpg',
+							  imageUrl: './img/gretsch.jpg',
 							  attributes: {
 								  color: 'black',
 								  bassdrumSize: 20,
@@ -41,7 +41,7 @@ export const drumkits: Collection<Product> =
 							  productName: 'Brooklyn',
 							  rating: 2,
 							  price: 1299,
-							  imageUrl: 'img/gretsch_red.png',
+							  imageUrl: './img/gretsch_red.png',
 							  attributes: {
 								  color: 'red',
 								  bassdrumSize: 18,
@@ -56,7 +56,7 @@ export const drumkits: Collection<Product> =
 							  productName: 'Classic Oak',
 							  rating: 3,
 							  price: 950,
-							  imageUrl: 'img/ludwig_classic_oak.jpg',
+							  imageUrl: './img/ludwig_classic_oak.jpg',
 							  attributes: {
 								  color: 'brown',
 								  bassdrumSize: 22,
@@ -71,7 +71,7 @@ export const drumkits: Collection<Product> =
 							  productName: 'Stage Custom Birch',
 							  rating: 1,
 							  price: 749,
-							  imageUrl: 'img/Yamaha_stage_custom.jpg',
+							  imageUrl: './img/Yamaha_stage_custom.jpg',
 							  attributes: {
 								  color: 'brown',
 								  bassdrumSize: 22,
@@ -86,7 +86,7 @@ export const drumkits: Collection<Product> =
 							  productName: 'Imperial star',
 							  rating: 4,
 							  price: 865,
-							  imageUrl: 'img/tama_imperial_star.webp',
+							  imageUrl: './img/tama_imperial_star.webp',
 							  attributes: {
 								  color: 'black',
 								  bassdrumSize: 22,
