@@ -18,7 +18,7 @@ export function getDrumkit(id: string): Promise<Product> {
 	});
 }
 
-export const drumkits: Collection<Product> =
+const drumkits: Collection<Product> =
 		Collection.of([
 						  {
 							  id: '111',
