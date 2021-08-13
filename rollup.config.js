@@ -56,7 +56,7 @@ var createOutputs = function (filename) {
 	// If not minifying, return outputs
 	if (!configs.minify) return outputs;
 
-	// Otherwise, ceate second set of outputs
+	// Otherwise, create second set of outputs
 	var outputsMin = createOutput(filename, configs.minify);
 
 	// Merge and return the two arrays

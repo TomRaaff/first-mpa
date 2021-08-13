@@ -1,4 +1,4 @@
-import { a, Component, figure, h2, header, li, nav, ul } from 'tr-utilities-lib';
+import { a, Component, h2, header, li, nav, ul } from 'tr-utilities-lib';
 
 export class HeaderComponent extends Component {
 

@@ -1,15 +1,13 @@
 import { Product } from '../types/Product';
-import { Collection, Maybe } from 'tr-utilities-lib';
+import { Collection } from 'tr-utilities-lib';
 
 export function getDrumkits(): Promise<Collection<Product>> {
-	// URL: 'http://localhost:7171/webshop/drumkits';
 	return new Promise((resolve) => {
 		setTimeout(() => resolve(drumkits), 1500);
 	});
 }
 
 export function getDrumkit(id: string): Promise<Product> {
-	// URL: 'http://localhost:7171/webshop/drumkits/${productId}';
 	return new Promise((resolve, reject) => {
 		const product = drumkits.findOne({ id });
 		if (product) {

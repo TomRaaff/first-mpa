@@ -33,3 +33,17 @@ I also improved the styling a lot. Fixed a lot of styling issues and added more 
 
 ### Day 4
 Presentation preparation day. Fixed small details.
+No presentations...
+
+### Day 5
+Built the first draft for thr webshop.
+questions:
+- how do you handle component rerenders? Answer: avoid them
+- how do you share data/state across pages? Answer: localStorage
+- how do you add parameters to a pageload?  Answer: url query parameters
+
+TODO: tryout parcel instead of rollup.
+Docs: https://parceljs.org/recipes.html
+Here's why: https://betterprogramming.pub/the-battle-of-bundlers-6333a4e3eda9
+
+
