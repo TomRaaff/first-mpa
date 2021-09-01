@@ -20,5 +20,4 @@ import { ProductSummaryComponent } from './components/ProductSummary';
 			.finally(() => {
 				document.querySelector('.spinner')!.classList.add('invisible');
 			});
-
 })();

@@ -3,7 +3,7 @@ import { Collection } from 'tr-utilities-lib';
 
 export function getDrumkits(): Promise<Collection<Product>> {
 	return new Promise((resolve) => {
-		setTimeout(() => resolve(drumkits), 1500);
+		setTimeout(() => resolve(drumkits), 800);
 	});
 }
 
@@ -11,7 +11,7 @@ export function getDrumkit(id: string): Promise<Product> {
 	return new Promise((resolve, reject) => {
 		const product = drumkits.findOne({ id });
 		if (product) {
-			setTimeout(() => resolve(product), 2000);
+			setTimeout(() => resolve(product), 600);
 		} else {
 			reject(new Error('Not found'));
 		}
