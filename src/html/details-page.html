@@ -12,11 +12,16 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <script src="https://kit.fontawesome.com/53439c554b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../scss/details-page.scss">
 </head>
 <body>
 
 <main>
+    <div class="breadcrumbs">
+        <span>Webshop / </span><a href="../html/products-page.html">Drumkits</a><span> / </span>
+    </div>
+
     <div class="spinner">
         <img src="../svg/spinner.svg" alt="loading spinner">
     </div>
@@ -27,14 +32,28 @@
                 <h2 class="productBrand">...</h2>
                 <h3 class="productName"></h3>
             </div>
-            <h2 class="price"></h2>
         </header>
-        <img class="productImage" src="../img/Yamaha_stage_custom.jpg" alt="a goodlooking drumkit">
-        <div class="rating"></div>
-        <div class="description">
-            <h4>Description</h4>
-            <p>...</p>
-        </div>
+
+        <img class="productImage" src="../svg/spinner.svg" alt="a goodlooking drumkit">
+
+        <section class="productInfo">
+            <div class="productInfo__info">
+                <h2 class="price"></h2>
+
+                <div id="rating"></div>
+                <div>Voorraadstatus: <span class="availability"></span></div>
+
+                <div class="buySection">
+                    <span id="quantityComponentHolder"></span>
+                    <button class="bigBtn primary"><i class="fas fa-shopping-basket"></i> buy</button>
+                </div>
+            </div>
+
+            <div class="productInfo__description">
+                <h4>Description</h4>
+                <p id="descriptionHolder"></p>
+            </div>
+        </section>
     </article>
 </main>
 

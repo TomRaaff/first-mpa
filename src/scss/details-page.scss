@@ -1,15 +1,62 @@
 @import 'src/scss/components/base';
+@import 'src/scss/components/components';
 @import 'src/scss/components/utils';
 @import 'src/scss/components/variables';
 
-header.productTitle {
-  display: block;
+.breadcrumbs {
+  margin: $marginSM 0;
+}
 
-  h2, h3 {
+header.productTitle {
+  border-radius: $borderRadiusLG;
+  background-color: $primary1;
+  color: $grey9;
+  align-items: flex-end;
+
+  .productBrand, .productName {
     display: inline-block;
+    margin-right: $margin;
   }
 }
 
 img.productImage {
   max-width: 50vw;
+  display: inline-block;
 }
+
+.productInfo {
+  padding: 0;
+  display: inline-block;
+
+  .rating {
+    color: $secondary3;
+  }
+
+  .rating:hover {
+    color: $secondary;
+    cursor: pointer;
+  }
+
+  .availability--direct {
+    color: forestgreen;
+  }
+
+  .availability--binnenkort {
+    color: orange;
+  }
+
+  .availability--reserveren {
+    color: orangered;
+  }
+
+  .bigBtn {
+    padding: $paddingSM $paddingXL;
+  }
+
+  .productInfo__description {
+    max-width: 30vw;
+    text-overflow: ellipsis;
+  }
+}
+
+

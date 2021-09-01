@@ -1,5 +1,6 @@
 import { Product } from '../types/Product';
 import { Collection } from 'tr-utilities-lib';
+import { ProductAvailability as Availability } from '../types/ProductAvailability.enum';
 
 export function getDrumkits(): Promise<Collection<Product>> {
 	return new Promise((resolve) => {
@@ -33,7 +34,8 @@ const drumkits: Collection<Product> =
 								  cymbalsIncluded: false,
 								  hardwareIncluded: true,
 							  },
-							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.'
+							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.',
+							  availability: Availability.DIRECT
 						  },
 						  {
 							  id: '222',
@@ -48,7 +50,8 @@ const drumkits: Collection<Product> =
 								  cymbalsIncluded: false,
 								  hardwareIncluded: true,
 							  },
-							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.'
+							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.',
+							  availability: Availability.BINNENKORT
 						  },
 						  {
 							  id: '333',
@@ -63,7 +66,8 @@ const drumkits: Collection<Product> =
 								  cymbalsIncluded: true,
 								  hardwareIncluded: true,
 							  },
-							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.'
+							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.',
+							  availability: Availability.DIRECT
 						  },
 						  {
 							  id: '444',
@@ -78,7 +82,8 @@ const drumkits: Collection<Product> =
 								  cymbalsIncluded: false,
 								  hardwareIncluded: false,
 							  },
-							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.'
+							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.',
+							  availability: Availability.RESERVEREN
 						  },
 						  {
 							  id: '555',
@@ -93,6 +98,7 @@ const drumkits: Collection<Product> =
 								  cymbalsIncluded: false,
 								  hardwareIncluded: true,
 							  },
-							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.'
+							  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nulla lacus, id maximus eros lobortis sit amet. Vivamus hendrerit sed orci sit amet mattis. Vestibulum cursus, sapien a tincidunt dignissim, dui arcu commodo felis, eu malesuada risus tortor et dui. Curabitur vitae vulputate ipsum. Sed pellentesque eros at efficitur vulputate. Proin quis lectus mattis quam lacinia vehicula aliquam vel magna. In magna massa, elementum et justo rhoncus, dignissim semper mauris. Donec velit enim, cursus lobortis dolor quis, congue sodales diam. Ut sed massa lacus. Mauris placerat ligula ultricies, efficitur justo a, ornare metus. Nulla consectetur interdum elit sed tempus. Quisque non augue mauris. Sed in tempus mauris, nec efficitur massa.',
+							  availability: Availability.BINNENKORT
 						  },
 					  ]);

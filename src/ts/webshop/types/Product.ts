@@ -1,3 +1,5 @@
+import { ProductAvailability } from './ProductAvailability.enum';
+
 export type Product = {
 	id: string;
 	brandName: string;
@@ -11,5 +13,6 @@ export type Product = {
 		bassdrumSize: number;
 		cymbalsIncluded: boolean;
 		hardwareIncluded: boolean;
-	}
+	},
+	availability: ProductAvailability;
 }

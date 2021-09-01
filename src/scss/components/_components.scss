@@ -1,0 +1,24 @@
+@import 'variables';
+
+.quantity {
+  box-sizing: content-box;
+
+  button {
+    margin: 0;
+    padding: $paddingSM $padding;
+  }
+
+  .left {
+    border-radius: $borderRadiusSM 0 0 $borderRadiusSM;
+  }
+
+  .right {
+    border-radius: 0 $borderRadiusSM $borderRadiusSM 0;
+  }
+
+  input {
+    padding: $paddingXS $paddingSM;
+    border: solid 4px $grey5;
+    width: 50px;
+  }
+}

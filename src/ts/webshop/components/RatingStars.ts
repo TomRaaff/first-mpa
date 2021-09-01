@@ -1,4 +1,4 @@
-import { Component, div, i } from 'tr-utilities-lib';
+import { Component, div, i, span } from 'tr-utilities-lib';
 
 const Star = {
 	WHOLE: 'fas',
@@ -42,7 +42,7 @@ export class RatingStarsComponent extends Component {
 	render(): HTMLElement {
 		const stars = [0, 1, 2, 3, 4].map((num) => (num <= this.state.rating) ? Star.WHOLE : Star.EMPTY);
 
-		return div(
+		return span({class: 'rating'},
 				i({ id: `${this.componentId}_0`, class: `${stars[0]} fa-star`, ...this.mouseEvents(0) }),
 				i({ id: `${this.componentId}_1`, class: `${stars[1]} fa-star`, ...this.mouseEvents(1) }),
 				i({ id: `${this.componentId}_2`, class: `${stars[2]} fa-star`, ...this.mouseEvents(2) }),

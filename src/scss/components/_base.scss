@@ -160,6 +160,15 @@ button {
   transition: all 0.2s;
 }
 
+button[disabled] {
+  background-color: $grey3;
+}
+
+button[disabled]:hover {
+  background-color: $grey3;
+  cursor: default;
+}
+
 button.primary {
   background: $secondary;
   color: $grey1;
@@ -176,4 +185,13 @@ figure {
 :focus-visible {
   outline: 2px solid $tertiary7;
   border-radius: $borderRadius;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  max-height: 100%;
+  width: 100%;
 }
