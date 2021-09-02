@@ -22,3 +22,12 @@
     width: 50px;
   }
 }
+
+.rating {
+  color: $secondary3;
+}
+
+.rating:hover {
+  color: $secondary;
+  cursor: pointer;
+}

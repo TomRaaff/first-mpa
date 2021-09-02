@@ -26,32 +26,28 @@
         <img src="../svg/spinner.svg" alt="loading spinner">
     </div>
 
-    <article class="invisible">
-        <header class="productTitle">
+    <article class="details invisible">
+        <header class="details__title">
             <div>
                 <h2 class="productBrand">...</h2>
                 <h3 class="productName"></h3>
             </div>
         </header>
 
-        <img class="productImage" src="../svg/spinner.svg" alt="a goodlooking drumkit">
+        <img class="details__image" src="../svg/spinner.svg" alt="a goodlooking drumkit">
 
-        <section class="productInfo">
-            <div class="productInfo__info">
-                <h2 class="price"></h2>
-
-                <div id="rating"></div>
-                <div>Voorraadstatus: <span class="availability"></span></div>
-
-                <div class="buySection">
-                    <span id="quantityComponentHolder"></span>
-                    <button class="bigBtn primary"><i class="fas fa-shopping-basket"></i> buy</button>
-                </div>
-            </div>
-
-            <div class="productInfo__description">
+        <section class="details__info">
+            <div class="details__info__description">
                 <h4>Description</h4>
                 <p id="descriptionHolder"></p>
+            </div>
+            <h2 id="priceHolder"></h2>
+            <div id="ratingHolder"></div>
+            <div>Voorraadstatus: <span class="availability"></span></div>
+
+            <div class="details__info__buy">
+                <span id="quantityComponentHolder"></span>
+                <button class="btn--big btn--primary"><i class="fas fa-shopping-basket"></i> buy</button>
             </div>
         </section>
     </article>

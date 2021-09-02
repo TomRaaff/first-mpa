@@ -169,13 +169,17 @@ button[disabled]:hover {
   cursor: default;
 }
 
-button.primary {
+button:hover {
+  background: $tertiary;
+}
+
+.btn--primary {
   background: $secondary;
   color: $grey1;
 }
 
-button:hover {
-  background: $tertiary;
+.btn--big {
+  padding: $paddingSM $paddingXL;
 }
 
 figure {

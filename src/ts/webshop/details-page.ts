@@ -28,6 +28,7 @@ function setAvailability(product: Product) {
 	availability.classList.add(classModifier);
 }
 
+// todo: change data-insertion selectors to use data-field='productName' and data-component='quantity'
 (function () {
 	console.log("Details-page loaded");
 	get<HTMLBodyElement>('body')
@@ -39,15 +40,15 @@ function setAvailability(product: Product) {
 				setBreadcrumb(product);
 				get<HTMLHeadingElement>('.productBrand').innerHTML = product.brandName;
 				get<HTMLHeadingElement>('.productName').innerHTML = product.productName;
-				get<HTMLHeadingElement>('.price').innerHTML = '€' + product.price;
+				get<HTMLHeadingElement>('#priceHolder').append('€' + product.price);
 				get<HTMLParagraphElement>('#descriptionHolder').append(product.description);
-				get<HTMLImageElement>('.productImage').src = product.imageUrl;
-				get<HTMLDivElement>('#rating').append(new RatingStarsComponent(product.rating).render());
+				get<HTMLImageElement>('.details__image').src = product.imageUrl;
+				get<HTMLDivElement>('#ratingHolder').append(new RatingStarsComponent(product.rating).render());
 				setAvailability(product);
 				get<HTMLSpanElement>('#quantityComponentHolder').append(new QuantityComponent().render())
 			})
 			.finally(() => {
-				document.querySelector('.spinner')!.classList.add('invisible');
-				document.querySelector('article.invisible')!.classList.remove('invisible');
+				get<HTMLDivElement>('.spinner').classList.add('invisible');
+				get<HTMLElement>('article.invisible').classList.remove('invisible');
 			});
 })()

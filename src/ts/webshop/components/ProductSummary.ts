@@ -27,14 +27,14 @@ export class ProductSummaryComponent extends Component {
 						h4(`${p.brandName} ${p.productName}`),
 						h3(`€${p.price}`)
 					),
-					div({class: 'rating'},
+					div(
 						new RatingStarsComponent(p.rating)
 					),
 					div({class: 'description'},
 						this.truncate(p.description)
 					),
 					div({class: 'buttons'},
-						button({ class: 'primary' },
+						button({ class: 'btn--big btn--primary' },
 							i({class: 'fas fa-shopping-basket'}),
 							' buy'
 						)
