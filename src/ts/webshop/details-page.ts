@@ -11,6 +11,10 @@ function get<T>(cssSelector: string): T {
 	return element;
 }
 
+function getBinding(bindingName: string): HTMLElement {
+	return get<HTMLElement>(`[data-binding="${bindingName}"]`);
+}
+
 function setBreadcrumb(product: Product) {
 	const breadcrumbs = get<HTMLDivElement>('.breadcrumbs');
 	breadcrumbs.innerHTML = breadcrumbs.innerHTML.concat(product.brandName, ' ', product.productName);
@@ -28,7 +32,6 @@ function setAvailability(product: Product) {
 	availability.classList.add(classModifier);
 }
 
-// todo: change data-insertion selectors to use data-field='productName' and data-component='quantity'
 (function () {
 	console.log("Details-page loaded");
 	get<HTMLBodyElement>('body')
@@ -38,14 +41,14 @@ function setAvailability(product: Product) {
 	getDrumkit(id)
 			.then((product) => {
 				setBreadcrumb(product);
-				get<HTMLHeadingElement>('.productBrand').innerHTML = product.brandName;
-				get<HTMLHeadingElement>('.productName').innerHTML = product.productName;
-				get<HTMLHeadingElement>('#priceHolder').append('€' + product.price);
-				get<HTMLParagraphElement>('#descriptionHolder').append(product.description);
+				getBinding('productBrand').append(product.brandName);
+				getBinding('productName').append(product.productName);
+				getBinding('price').append('€' + product.price);
+				getBinding('description').append(product.description);
 				get<HTMLImageElement>('.details__image').src = product.imageUrl;
-				get<HTMLDivElement>('#ratingHolder').append(new RatingStarsComponent(product.rating).render());
+				getBinding('rating').append(new RatingStarsComponent(product.rating).render());
 				setAvailability(product);
-				get<HTMLSpanElement>('#quantityComponentHolder').append(new QuantityComponent().render())
+				getBinding('quantityComponent').append(new QuantityComponent().render())
 			})
 			.finally(() => {
 				get<HTMLDivElement>('.spinner').classList.add('invisible');

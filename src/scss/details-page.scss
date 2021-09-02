@@ -18,9 +18,9 @@ header.details__title {
   border-radius: $borderRadiusLG;
   background-color: $primary1;
   color: $grey9;
-  align-items: flex-end;
+  display: block;
 
-  .productBrand, .productName {
+  [data-binding="productBrand"], [data-binding="productName"] {
     display: inline-block;
     margin-right: $margin;
   }

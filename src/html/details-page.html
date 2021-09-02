@@ -28,10 +28,8 @@
 
     <article class="details invisible">
         <header class="details__title">
-            <div>
-                <h2 class="productBrand">...</h2>
-                <h3 class="productName"></h3>
-            </div>
+            <h2 data-binding="productBrand"></h2>
+            <h3 data-binding="productName"></h3>
         </header>
 
         <img class="details__image" src="../svg/spinner.svg" alt="a goodlooking drumkit">
@@ -39,14 +37,14 @@
         <section class="details__info">
             <div class="details__info__description">
                 <h4>Description</h4>
-                <p id="descriptionHolder"></p>
+                <p data-binding="description"></p>
             </div>
-            <h2 id="priceHolder"></h2>
-            <div id="ratingHolder"></div>
+            <h2 data-binding="price"></h2>
+            <div data-binding="rating"></div>
             <div>Voorraadstatus: <span class="availability"></span></div>
 
             <div class="details__info__buy">
-                <span id="quantityComponentHolder"></span>
+                <span data-binding="quantityComponent"></span>
                 <button class="btn--big btn--primary"><i class="fas fa-shopping-basket"></i> buy</button>
             </div>
         </section>
