@@ -3,6 +3,7 @@ import { Collection } from 'tr-utilities-lib';
 import { getDrumkits } from './backend/Drumkits';
 import { Product } from './types/Product';
 import { ProductSummaryComponent } from './components/ProductSummary';
+import { bind, get } from './shared/DOM-utils';
 
 (async function () {
 	console.log('Products-page loaded');
@@ -11,13 +12,11 @@ import { ProductSummaryComponent } from './components/ProductSummary';
 
 	getDrumkits()
 			.then((products: Collection<Product>) => {
-				products.map((product) => new ProductSummaryComponent(product))
-						.forEach((productComponent) => {
-							document.getElementById('products-list')!
-									.append(productComponent.render());
+				products.forEach((product) => {
+							bind('products-list', new ProductSummaryComponent(product));
 						});
 			})
 			.finally(() => {
-				document.querySelector('.spinner')!.classList.add('invisible');
+				get<HTMLElement>('.spinner').classList.add('invisible');
 			});
 })();

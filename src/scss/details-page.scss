@@ -3,8 +3,10 @@
 @import 'src/scss/components/utils';
 @import 'src/scss/components/variables';
 
-.breadcrumbs {
-  margin: $marginSM 0;
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  padding: $padding;
 }
 
 .details {

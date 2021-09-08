@@ -25,6 +25,8 @@ export class RatingStarsComponent extends Component {
 			});
 	}
 
+	// todo replace this with individual star icon components in order to keep state within these components, rather than
+	// 	fetching them from the dom.
 	private getStarIconElements(): Array<HTMLElement> {
 		return [0, 1, 2, 3, 4]
 				.map((index) => `${this.componentId}_${index}`)

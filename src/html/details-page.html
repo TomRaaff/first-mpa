@@ -18,9 +18,14 @@
 <body>
 
 <main>
-    <div class="breadcrumbs">
-        <span>Webshop / </span><a href="../html/products-page.html">Drumkits</a><span> / </span>
-    </div>
+    <nav class="subheader">
+        <div class="breadcrumbs">
+            <span>Webshop / </span><a href="../html/products-page.html">Drumkits</a><span> / </span>
+        </div>
+        <div class="winkelmand">
+            <a href="../html/shopping-cart-page.html">Winkelmand</a>
+        </div>
+    </nav>
 
     <div class="spinner">
         <img src="../svg/spinner.svg" alt="loading spinner">
@@ -41,11 +46,13 @@
             </div>
             <h2 data-binding="price"></h2>
             <div data-binding="rating"></div>
-            <div>Voorraadstatus: <span class="availability"></span></div>
+            <div>Voorraadstatus: <span data-binding="availability"></span></div>
 
             <div class="details__info__buy">
                 <span data-binding="quantityComponent"></span>
-                <button class="btn--big btn--primary"><i class="fas fa-shopping-basket"></i> buy</button>
+                <button class="btn--big btn--primary" data-binding="buyButton"><i class="fas fa-shopping-basket"></i>
+                    buy
+                </button>
             </div>
         </section>
     </article>

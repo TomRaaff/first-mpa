@@ -35,6 +35,6 @@
         "typescript": "^4.3.5"
     },
     "dependencies": {
-        "tr-utilities-lib": "^1.4.0"
+        "tr-utilities-lib": "^1.6.0"
     }
 }

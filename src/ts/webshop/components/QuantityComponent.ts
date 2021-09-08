@@ -1,17 +1,17 @@
 import { button, Component, input, span } from 'tr-utilities-lib';
 
 export class QuantityComponent extends Component {
-	constructor() {
+	constructor(amount = 1) {
 		super();
-		this.setState({ value: 1 });
+		this.setState({ amount });
 	}
 
 	increment() {
-		this.state.value = this.state.value + 1;
+		this.state.amount = this.state.amount + 1;
 	}
 
 	decrement() {
-		this.state.value = this.state.value - 1;
+		this.state.amount = this.state.amount - 1;
 	}
 
 	render() {
@@ -19,12 +19,12 @@ export class QuantityComponent extends Component {
 					button({
 							   class: 'left',
 							   onclick: () => this.decrement(),
-							   disabled: (this.state.value <= 1)
+							   disabled: (this.state.amount <= 1)
 						   }, '-'),
 					input({
 							  type: 'text',
 							  readonly: true,
-							  value: this.state.value.toString()
+							  value: this.state.amount.toString()
 						  }),
 					button({
 							   class: 'right',
