@@ -46,4 +46,25 @@ TODO: tryout parcel instead of rollup.
 Docs: https://parceljs.org/recipes.html
 Here's why: https://betterprogramming.pub/the-battle-of-bundlers-6333a4e3eda9
 
+### Day 3453
+I'm using Parcel now. Thank god!! It does everything I'd want. And blazingly fast.
 
+### Day 298
+learned about BEM. Trying to implement it as well. Notice my css isn't as nice as 
+I hoped it would be. It's based on html elements too much, rather than on classes.
+It's still okay though.
+
+- implemented a QuantityComponent as two buttons and an input.
+- implemented a RatingComponent
+- implemented the productListPage
+- implemented the DetailsPage.
+  routing turned out to be very easy.
+- styling took a lot of time though.
+- Had to update the library with the deepClone() and mergeObjects()
+
+### 8 sept
+The details page is almost done. Today I got into the problem of sharing data across
+components and files. communication from child -> parent component is really messy.
+So for now I avoid it. 
+I've set up a system around localStorage to handle all data that needs to be passed
+around. Maybe localstorage is a bit heavy for that though.
