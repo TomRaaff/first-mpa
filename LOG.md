@@ -68,3 +68,16 @@ components and files. communication from child -> parent component is really mes
 So for now I avoid it. 
 I've set up a system around localStorage to handle all data that needs to be passed
 around. Maybe localstorage is a bit heavy for that though.
+
+### 11 Sept
+I've noticed that all pages share a similar set-up. They all need to:
+- do spinner stuff
+- fetch data
+- assign values to the html
+- assign click handlers
+Doing all of that stuff manually, is kind of messy too. And kind of annoying. So I took
+an idea of the set-up of Angular modules and tried to build a set-up function that
+should be able to handle the setting up of the page.
+
+Initially, I wanted the fetching of data to be handles by the setup as well,
+but that turned out to be impractical. Or I haven't found the right way yet.
