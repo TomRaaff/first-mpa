@@ -21,6 +21,7 @@ export class CalculatorComponent extends Component {
 
 	clearEquation(inputElement: HTMLInputElement) {
 		inputElement.value = '';
+		this.state.answer = '';
 	}
 
 	solveEquation(inputElement: HTMLInputElement) {
@@ -35,7 +36,6 @@ export class CalculatorComponent extends Component {
 		return div({class:'component'},
 				   div({ class: 'calculator' },
 				   		header(
-							   // @ts-ignore
 							   {
 								   onclick: function () {
 									   const headElement = this as HTMLHeadElement;

@@ -1,16 +1,18 @@
-import { HeaderComponent } from '../components/HeaderComponent';
-import { getDrumkit } from './backend/Drumkits';
-import { RatingStarsComponent } from './components/RatingStars';
-import { Product } from './types/Product';
-import { ProductAvailability } from './types/ProductAvailability.enum';
-import { QuantityComponent } from './components/QuantityComponent';
-import { bind, get, getBinding } from './shared/DOM-utils';
-import { DetailsPageStore as Store } from './shared/stores/DetailsPageStore';
-import { pageSetup } from './shared/PageSetup';
+import { HeaderComponent } from '../../../components/HeaderComponent';
+import { getDrumkit } from '../../backend/Drumkits';
+import { RatingStarsComponent } from '../../components/RatingStars';
+import { Product } from '../../types/Product';
+import { ProductAvailability } from '../../types/ProductAvailability.enum';
+import { QuantityComponent } from '../../components/QuantityComponent';
+import { bind, get, getBinding } from '../../shared/DOM-utils';
+import { DetailsPageState as State } from './DetailsPageState';
+import { pageSetup } from '../../shared/PageSetup';
+import { ShoppingCartStore } from '../../shared/stores/ShoppingCartStore';
+import { ProductLineItem } from '../../types/ProductLineItem';
 
 function setBreadcrumb(product: Product) {
 	const breadcrumbs = get<HTMLDivElement>('.breadcrumbs');
-	breadcrumbs.innerHTML = breadcrumbs.innerHTML.concat(product.brandName, ' ', product.productName);
+	breadcrumbs.innerHTML = breadcrumbs.innerHTML.concat(' / ', product.brandName, ' ', product.productName);
 }
 
 function setAvailability(product: Product) {
@@ -30,12 +32,13 @@ function setAvailability(product: Product) {
 	availability.classList.add(classModifier);
 }
 
-export function buy() {
-	const inputEl = getBinding('quantityComponent')
-			.querySelector('input') as HTMLInputElement;
-	const amount = Number.parseInt(inputEl.value);
-	Store.setAmount(amount);
-	console.log('buying amount: ', amount);
+function buy() {
+	const productLineItem: ProductLineItem = {
+		product: State.getProduct() || {} as Product,
+		amount: State.getAmount() || 0
+	}
+	ShoppingCartStore.addProduct(productLineItem);
+	window.location.href = '../shopping-cart-page.html';
 }
 
 function getProductId(): string {
@@ -70,7 +73,7 @@ function setLoading(isLoading: boolean) {
 								  price: '€' + product.price,
 								  description: product.description,
 								  rating: new RatingStarsComponent(product.rating),
-								  quantityComponent: new QuantityComponent(),
+								  quantityComponent: new QuantityComponent({amount: 1}, {onAmountChange: (amt) => State.setAmount(amt)}),
 							  },
 							  bindingFunctions: {
 								  imageUrl: () => get<HTMLImageElement>('.details__image').src = product.imageUrl,
@@ -81,7 +84,7 @@ function setLoading(isLoading: boolean) {
 								  buyButton: () => buy()
 							  }
 						  });
-				Store.setProduct(product);
+				State.setProduct(product);
 			})
 			.finally(() => {
 				setLoading(false);

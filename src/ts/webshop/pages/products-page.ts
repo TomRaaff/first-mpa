@@ -1,9 +1,9 @@
-import { HeaderComponent } from '../components/HeaderComponent';
+import { HeaderComponent } from '../../components/HeaderComponent';
 import { Collection } from 'tr-utilities-lib';
-import { getDrumkits } from './backend/Drumkits';
-import { Product } from './types/Product';
-import { ProductSummaryComponent } from './components/ProductSummary';
-import { bind, get } from './shared/DOM-utils';
+import { getDrumkits } from '../backend/Drumkits';
+import { Product } from '../types/Product';
+import { ProductSummaryComponent } from '../components/ProductSummary';
+import { bind, get } from '../shared/DOM-utils';
 
 (async function () {
 	console.log('Products-page loaded');

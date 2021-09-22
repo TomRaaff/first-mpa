@@ -16,3 +16,10 @@ export function bind(bindingName: string, content: string | Component): HTMLElem
 	boundElement.append(item);
 	return boundElement;
 }
+
+export function clearElement(cssSelector: string): void {
+	const parent = get<HTMLUListElement>(cssSelector);
+	while (parent.firstChild) {
+		parent.removeChild(parent.firstChild);
+	}
+}

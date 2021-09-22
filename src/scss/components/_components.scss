@@ -31,3 +31,9 @@
   color: $secondary;
   cursor: pointer;
 }
+
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  padding: $padding;
+}

@@ -3,12 +3,6 @@
 @import 'src/scss/components/utils';
 @import 'src/scss/components/variables';
 
-.subheader {
-  display: flex;
-  justify-content: space-between;
-  padding: $padding;
-}
-
 .details {
   display: grid;
   grid-template-rows: fit-content(100px) 5fr;

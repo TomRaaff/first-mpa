@@ -81,3 +81,11 @@ should be able to handle the setting up of the page.
 
 Initially, I wanted the fetching of data to be handles by the setup as well,
 but that turned out to be impractical. Or I haven't found the right way yet.
+
+### 15 Sept
+I've found a solution to one of the communication puzzles. I still needed a way
+for child components to speak to their parent components and I've found it.
+In their constructors you can now add event listeners that are callable from within
+the child component. They aren't actually events, they are just functions that are
+passed in as input.
+

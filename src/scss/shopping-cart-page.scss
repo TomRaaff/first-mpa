@@ -1,3 +1,41 @@
 @import 'src/scss/components/base';
 @import 'src/scss/components/utils';
 @import 'src/scss/components/variables';
+@import 'src/scss/components/components';
+
+.table-header {
+  padding: $paddingXS $paddingLG;
+  display: grid;
+  grid-template-columns: 5% 20% 25% 16% 16% 16%;
+  border-radius: $borderRadius;
+}
+
+.index1 {
+  grid-column-start: 2
+}
+.index3 {
+  grid-column-start: 4
+}
+.index4 {
+  grid-column-start: 5
+}
+.index5 {
+  grid-column-start: 6
+}
+
+.product-line-item {
+  display: grid;
+  grid-template-columns: 5% 20% 25% 16% 16% 16%;
+  align-items: center;
+  border-bottom: solid 5px $grey5;
+  padding: $padding 0;
+}
+
+.text-right {
+  text-align: end;
+}
+
+.product-line-item__image {
+  max-width: 300px;
+  width: 100%;
+}

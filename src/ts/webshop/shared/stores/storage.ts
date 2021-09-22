@@ -1,17 +1,21 @@
 import { mergeObjects } from 'tr-utilities-lib';
 
-export function getLocalStorage(identifier: string): any {
+export function getLocalStorage(identifier: string): object | undefined{
 	const stored = localStorage.getItem(identifier);
 	if (!stored) {
-		throw new Error(`no local storage was set for id: ${identifier}`);
+		return undefined;
 	} else {
 		return JSON.parse(stored);
 	}
 }
 
 export function setLocalStorage(identifier: string, object: object) {
-	const state = getLocalStorage(identifier);
-	localStorage.setItem(identifier, JSON.stringify(mergeObjects(state, object)));
+		const state = getLocalStorage(identifier);
+		if (state) {
+			localStorage.setItem(identifier, JSON.stringify(mergeObjects(state, object)));
+		} else {
+			localStorage.setItem(identifier, JSON.stringify(object));
+		}
 }
 
 (function initStates() {

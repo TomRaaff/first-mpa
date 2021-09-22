@@ -17,9 +17,26 @@
 <body>
 
 <main>
-    <section class="item-content"></section>
+    <nav class="subheader">
+        <div class="breadcrumbs">
+            <span>Webshop / </span><a href="../html/products-page.html">Drumkits</a>
+        </div>
+        <div class="winkelmand">
+            <a href="../html/shopping-cart-page.html">Winkelmand</a>
+        </div>
+    </nav>
+    <h2>Winkelmand</h2>
+    <article class="item-content">
+        <header class="table-header">
+            <h5 class="index1">Product</h5>
+            <h5 class="index3 text-right">Amount</h5>
+            <h5 class="index4 text-right">Price</h5>
+            <h5 class="index5 text-right">Subtotal</h5>
+        </header>
+        <ul data-binding="product-line-items"></ul>
+    </article>
 </main>
 
-<script type="module" src="../ts/webshop/shopping-cart-page.ts"></script>
+<script type="module" src="../ts/webshop/pages/shopping-cart-page.ts"></script>
 </body>
 </html>
